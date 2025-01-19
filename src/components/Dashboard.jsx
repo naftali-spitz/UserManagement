@@ -129,7 +129,7 @@ const UserManagemenDashboard = ({ setIsLoggedIn }) => {
         }
     }
 
-    if (loading) return <CircularProgress style={{margin: 'auto'}} />
+    if (loading) return <CircularProgress sx={{ position: 'absolute', top: '50%', left: '50%', marginTop: '-30px', marginLeft: '-30px'}} size='60px' />
     if (error) return <div>{error}</div>
 
     return (

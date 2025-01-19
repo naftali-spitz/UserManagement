@@ -10,7 +10,7 @@ const Home = ({ setIsLoggedIn }) => {
         <Container maxWidth="sm">
             <Box sx={{ textAlign: "center", marginTop: 4}}>
                 <Typography variant="h3" gutterBottom>
-                    Yo! Welcome to Your User Dashboard
+                    Welcome to Your User Dashboard
                 </Typography>
                 <Typography variant="body1" fontSize={"2rem"} sx={{ marginTop: 4}}>
                     Just log in to start managing your users!

@@ -13,6 +13,9 @@ export const login = async (username, password) => {
     try {
         const response = await api.post('auth/login', { username, password});
         const {token} = response.data
+        setTimeout(() => {
+            localStorage.removeItem('token')
+        }, 1000 * 60)
         localStorage.setItem('token', token)
     } catch (error) {
         throw new Error(error.response?.data?.message || 'Login Failed');
