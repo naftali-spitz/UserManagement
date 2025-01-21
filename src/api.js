@@ -15,7 +15,7 @@ export const login = async (username, password) => {
         const {token} = response.data
         setTimeout(() => {
             localStorage.removeItem('token')
-        }, 1000 * 60)
+        }, 1000 * 60 * 10)
         localStorage.setItem('token', token)
     } catch (error) {
         throw new Error(error.response?.data?.message || 'Login Failed');
