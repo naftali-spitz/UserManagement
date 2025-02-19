@@ -10,10 +10,10 @@ const Home = ({ setIsLoggedIn }) => {
         <Container maxWidth="sm">
             <Box sx={{ textAlign: "center", marginTop: 4}}>
                 <Typography variant="h3" gutterBottom>
-                    Welcome to Your User Dashboard
+                    Welcome to the User Dashboard
                 </Typography>
                 <Typography variant="body1" fontSize={"2rem"} sx={{ marginTop: 4}}>
-                    Just log in to start managing your users!
+                    Log in to start managing your users!
                 </Typography>
                 <Button variant="contained" onClick={() => setModalOpen(true)} sx={{ marginTop: 4 }}>
                     Login
